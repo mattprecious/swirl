@@ -1,17 +1,18 @@
 buildscript {
   dependencies {
-    classpath 'com.android.tools.build:gradle:2.1.0'
+    classpath 'com.android.tools.build:gradle:3.0.1'
   }
 }
 
 apply plugin: 'com.android.library'
 
 android {
-  compileSdkVersion 23
-  buildToolsVersion '23.0.3'
+  compileSdkVersion 27
 
   defaultConfig {
+    minSdkVersion 14
     versionName VERSION_NAME
+    vectorDrawables.useSupportLibrary = true
   }
 
   compileOptions {
@@ -23,7 +24,9 @@ android {
 }
 
 dependencies {
-  compile 'com.android.support:support-annotations:23.4.0'
+  compile 'com.android.support:support-annotations:27.0.2'
+  compile 'com.android.support:support-vector-drawable:27.0.2'
+  compile 'com.android.support:animated-vector-drawable:27.0.2'
 }
 
 apply from: 'gradle-mvn-push.gradle'

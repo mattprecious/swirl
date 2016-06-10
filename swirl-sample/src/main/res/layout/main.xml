@@ -44,4 +44,13 @@
         android:text="Error"
         />
   </RadioGroup>
+
+  <CheckBox
+      android:id="@+id/animate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="12dp"
+      android:checked="true"
+      android:text="Animate"
+      />
 </LinearLayout>

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <style name="Theme.Swirl" parent="@android:style/Theme.Material.Light">
+  <style name="Theme.Swirl" parent="@android:style/Theme.Material.Light.DarkActionBar">
+    <item name="android:colorPrimary">#ff607d8b</item>
+    <item name="android:colorPrimaryDark">#ff546e7a</item>
+
     <item name="swirl_ridgeColor">?android:attr/textColorSecondary</item>
     <item name="swirl_errorColor">?android:attr/colorAccent</item>
   </style>
