@@ -12,7 +12,7 @@ import android.widget.ImageView;
 
 @TargetApi(Build.VERSION_CODES.M)
 public final class SwirlView extends ImageView {
-  // Keep in sync with attrs.
+
   public enum State {
     OFF,
     ON,
