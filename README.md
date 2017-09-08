@@ -31,7 +31,7 @@ Then, you may include `SwirlView` anywhere in your app.
 Note that this example specifies a width and height and does not use `wrap_content`. Since the
 drawables are vectors, there isn't an appropriate size to default to so you must specify one.
 
-Switch between icons by calling `setState()` or by using the `app:swirl_state` attribute.
+Switch between icons by calling `setState()` or by using the `tools:swirl_state` attribute.
 
 See the provided sample for a complete implementation.
 
