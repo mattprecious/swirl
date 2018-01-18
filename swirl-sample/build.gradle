@@ -1,6 +1,6 @@
 buildscript {
   dependencies {
-    classpath 'com.android.tools.build:gradle:2.1.0'
+    classpath 'com.android.tools.build:gradle:3.0.1'
   }
 }
 
@@ -9,12 +9,12 @@ apply plugin: 'com.android.application'
 dependencies {
   compile project(':swirl')
 
-  compile 'com.jakewharton:butterknife:7.0.1'
+  implementation 'com.jakewharton:butterknife:8.8.1'
+  annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }
 
 android {
-  compileSdkVersion 23
-  buildToolsVersion "23.0.3"
+  compileSdkVersion 27
 
   defaultConfig {
     versionName VERSION_NAME
