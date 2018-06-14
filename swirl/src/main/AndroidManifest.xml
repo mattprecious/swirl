@@ -1,7 +1,1 @@
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:versionCode="1"
-    package="com.mattprecious.swirl"
-    >
-  <uses-sdk android:minSdkVersion="15"/>
-</manifest>
+<manifest package="com.mattprecious.swirl"/>
