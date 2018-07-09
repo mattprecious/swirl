@@ -1,22 +1,11 @@
-buildscript {
-  dependencies {
-    classpath 'com.android.tools.build:gradle:3.0.1'
-  }
-}
-
 apply plugin: 'com.android.application'
 
-dependencies {
-  compile project(':swirl')
-
-  implementation 'com.jakewharton:butterknife:8.8.1'
-  annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-}
-
 android {
-  compileSdkVersion 27
+  compileSdkVersion 28
 
   defaultConfig {
+    minSdkVersion 21
+    targetSdkVersion 28
     versionName VERSION_NAME
   }
 
@@ -28,4 +17,11 @@ android {
   lintOptions {
     abortOnError false
   }
+}
+
+dependencies {
+  implementation project(':swirl')
+
+  implementation 'com.jakewharton:butterknife:8.8.1'
+  annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }

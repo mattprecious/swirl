@@ -1,12 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    android:versionCode="1"
-    package="com.mattprecious.swirl.sample"
-    >
-
-  <uses-sdk
-      android:minSdkVersion="21"
-      android:targetSdkVersion="23"
-      />
+    package="com.mattprecious.swirl.sample">
 
   <application
       android:allowBackup="true"

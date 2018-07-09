@@ -1,16 +1,34 @@
-allprojects {
-  buildscript {
-    repositories {
-      google()
-      mavenCentral()
-      jcenter()
-    }
+buildscript {
+  ext.versions = [
+    'supportLibrary': '28.0.0-alpha3',
+  ]
+
+  repositories {
+    google()
+    mavenCentral()
+    jcenter()
   }
+
   dependencies {
-    repositories {
-      google()
-      mavenCentral()
-      jcenter()
+    classpath 'com.android.tools.build:gradle:3.1.3'
+  }
+}
+
+subprojects {
+  repositories {
+    google()
+    mavenCentral()
+    jcenter()
+  }
+
+  configurations.all {
+    resolutionStrategy {
+      eachDependency { details ->
+        // Force all of the primary support libraries to use the same version.
+        if (details.requested.group == 'com.android.support') {
+          details.useVersion versions.supportLibrary
+        }
+      }
     }
   }
 

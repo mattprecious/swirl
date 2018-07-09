@@ -42,7 +42,7 @@ Download
 Gradle:
 
 ```groovy
-compile 'com.mattprecious.swirl:swirl:1.1.0'
+implementation 'com.mattprecious.swirl:swirl:1.1.0'
 ```
 
 
