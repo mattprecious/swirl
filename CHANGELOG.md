@@ -1,6 +1,11 @@
 Change Log
 ==========
 
+Version 1.1.1 *(2018-07-18)*
+----------------------------
+
+Repackaged to fix issue with Jetifier
+
 Version 1.1.0 *(2018-01-17)*
 ----------------------------
 
