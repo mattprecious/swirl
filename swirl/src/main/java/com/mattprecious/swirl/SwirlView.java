@@ -6,9 +6,9 @@ import android.content.res.TypedArray;
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.support.annotation.DrawableRes;
-import android.support.graphics.drawable.AnimatedVectorDrawableCompat;
-import android.support.graphics.drawable.VectorDrawableCompat;
+import androidx.annotation.DrawableRes;
+import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat;
+import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
