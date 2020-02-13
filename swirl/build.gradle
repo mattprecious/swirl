@@ -18,8 +18,8 @@ android {
 }
 
 dependencies {
-  implementation "androidx.annotation:annotation:${versions.annotation_version}"
-  implementation "androidx.vectordrawable:vectordrawable-animated:${versions.vectordrawable_version}"
+  implementation 'androidx.annotation:annotation:1.0.0'
+  implementation 'androidx.vectordrawable:vectordrawable-animated:1.0.0'
 }
 
 apply from: 'gradle-mvn-push.gradle'

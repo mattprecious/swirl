@@ -1,8 +1,4 @@
 buildscript {
-  ext.versions = [
-    'annotation_version': '1.0.0',
-    'vectordrawable_version': '1.0.0',
-  ]
 
   repositories {
     google()
